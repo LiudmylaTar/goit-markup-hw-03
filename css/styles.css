@@ -4,35 +4,42 @@ body {
   background-color: #ffffff;
 }
 
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 ul {
   list-style-type: none;
-}
-.main-titel {
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 107%;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: #ffffff;
-  background-color: 2e2F42;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
-.main-page {
-  background-color: #2e2f42;
+.container {
+  max-width: 1440px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
-.main-button {
-  background-color: #4d5ae5;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 150%;
-  letter-spacing: 0.04em;
-  color: #fff;
-  border: none;
-  cursor: pointer;
+img {
+  display: block;
+  max-width: 100%;
 }
-.main-button:focus,
-.main-button:hover {
-  background: #404bbf;
+
+.page-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-bottom: 24px;
+  padding-top: 24px;
+}
+
+.header-nav {
+  display: flex;
+  padding-left: 156px;
 }
 
 .logo-head {
@@ -44,12 +51,18 @@ ul {
   color: #4d5ae5;
   text-decoration: none;
   font-family: Raleway, sans-serif;
-}
-.logo-studio {
+  display: flex;
+   }
+.logo-head-studio {
   color: #2e2f42;
 }
-
-.nav-list {
+.header-list {
+  display: flex;
+  gap: 40px;
+  margin-left: 76px;
+  margin-right: 332px;
+}
+.nav-item {
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
@@ -66,6 +79,15 @@ ul {
 }
 .contacts {
   font-style: normal;
+  display: block;
+}
+.contacts-list {
+  display: flex;
+  gap: 40px;
+  justify-content: flex-end;
+}
+.nav-list .link {
+  display: block;
 }
 .list-cont {
   font-size: 16px;
@@ -79,16 +101,65 @@ ul {
 .list-cont:focus {
   color: #404bbf;
 }
-.titel-2 {
+
+.main-titel {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 111%;
-  letter-spacing: 0.02em;
+  font-size: 56px;
+  line-height: 107%;
   text-align: center;
-  color: 2e2F42;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  background-color: 2e2F42;
+  margin-left: 472px;
+  margin-right: 472px;
+  padding-top: 191px;
+  width: 496;
 }
 
-.benefits-titel {
+.main-page {
+  background-color: #2e2f42;
+}
+.main-button {
+  background-color: #4d5ae5;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 16px 32px;
+  margin-left: 636px;
+  margin-right: 635px;
+  margin-top: 48px;
+  margin-bottom: 188px;
+  border-radius: 4px;
+}
+.main-button:focus,
+.main-button:hover {
+  background: #404bbf;
+}
+
+.titel-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.benefits-list {
+  display: flex;
+  gap: 24px;
+  margin: 120px 156px;
+}
+
+.benefits-subtitel {
   font-weight: 500;
   font-size: 20px;
   line-height: 120%;
@@ -115,9 +186,19 @@ ul {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
-}
+  padding-top: 120px;
+ }
 
 .team-list {
+  display: flex;
+  gap: 24px;
+  padding-left: 156px;
+  padding-right: 156px;
+  padding-top: 72px;
+  padding-bottom: 120px;
+}
+
+.team-item {
   background-color: #ffffff;
 }
 .name {
@@ -128,6 +209,7 @@ ul {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-top: 32px;
 }
 
 .position {
@@ -137,6 +219,8 @@ ul {
   text-align: center;
   color: #434455;
   background-color: #ffffff;
+  margin-top: 8px;
+  margin-bottom: 32px;
 }
 
 .titel-portfolio {
@@ -147,8 +231,17 @@ ul {
   text-transform: capitalize;
   text-align: center;
   color: #2e2f42;
+  padding-top: 120px;
+  padding-bottom: 72px;
 }
 
+.portfolio-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  padding-bottom: 120px;
+}
 .product {
   font-weight: 500;
   font-size: 20px;
@@ -162,7 +255,11 @@ ul {
   letter-spacing: 0.02em;
   color: #434455;
 }
-.logo {
+
+.footer-end .container{
+  display: block;
+}
+.logo-footer {
   font-weight: 700;
   font-size: 18px;
   line-height: 117%;
@@ -171,8 +268,12 @@ ul {
   color: #4d5ae5;
   text-decoration: none;
   font-family: Raleway, sans-serif;
+  padding-left: 156px;
+  padding-bottom: 16px;
+  margin-top: 100px;
 }
-.logo-footer {
+
+.logo-footer-accent {
   color: #f4f4fd;
 }
 .footer-end {
@@ -184,4 +285,8 @@ ul {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   background-color: #2e2f42;
+  max-width: 264px;
+  margin-left: 156px;
+  margin-bottom: 100px;
+  margin-right: 1020;
 }

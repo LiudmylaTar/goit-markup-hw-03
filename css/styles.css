@@ -2,6 +2,7 @@ body {
   font-family: Roboto, sans-serif;
   color: #434455;
   background-color: #ffffff;
+  margin: 0;
 }
 
 h1,
@@ -257,7 +258,7 @@ img {
 }
 
 .footer-end .container{
-  display: block;
+  display: inline-block;
 }
 .logo-footer {
   font-weight: 700;
@@ -271,6 +272,7 @@ img {
   padding-left: 156px;
   padding-bottom: 16px;
   margin-top: 100px;
+  display: block;
 }
 
 .logo-footer-accent {
@@ -278,6 +280,7 @@ img {
 }
 .footer-end {
   background-color: #2e2f42;
+  
 }
 .footer-descr {
   font-size: 16px;
@@ -285,6 +288,7 @@ img {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   background-color: #2e2f42;
+  display: block;
   max-width: 264px;
   margin-left: 156px;
   margin-bottom: 100px;

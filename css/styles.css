@@ -24,23 +24,30 @@ ul {
   max-width: 1440px;
   padding-left: 0px;
   padding-right: 0px;
+
 }
 img {
   display: block;
   max-width: 100%;
 }
 
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
 .page-header .container {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding-bottom: 24px;
-  padding-top: 24px;
+  padding: 0 15px;
+  width: 1158px;
+  margin: 0 auto;
 }
 
 .header-nav {
   display: flex;
-  padding-left: 156px;
+  align-items: center;
+  padding: 24px 0;
 }
 
 .logo-head {
@@ -53,6 +60,7 @@ img {
   text-decoration: none;
   font-family: Raleway, sans-serif;
   display: flex;
+  margin-right: 76px;
    }
 .logo-head-studio {
   color: #2e2f42;
@@ -60,7 +68,6 @@ img {
 .header-list {
   display: flex;
   gap: 40px;
-  margin-left: 76px;
   margin-right: 332px;
 }
 .nav-item {
@@ -70,6 +77,7 @@ img {
   letter-spacing: 0.02em;
   color: #2e2f42;
   text-decoration: none;
+  padding: 24px 0;
 }
 .nav-list:hover {
   color: #404bbf;
@@ -114,11 +122,12 @@ img {
   margin-left: 472px;
   margin-right: 472px;
   padding-top: 191px;
-  width: 496;
+  max-width: 496px;
 }
 
 .main-page {
   background-color: #2e2f42;
+  padding: 188px 0;
 }
 .main-button {
   background-color: #4d5ae5;
@@ -129,7 +138,9 @@ img {
   color: #fff;
   border: none;
   cursor: pointer;
-  padding: 16px 32px;
+  display: block;
+  min-width: 169px;
+  height: 56px;
   margin-left: 636px;
   margin-right: 635px;
   margin-top: 48px;
@@ -141,6 +152,9 @@ img {
   background: #404bbf;
 }
 
+.benefits{
+  padding: 120px 0;
+}
 .titel-hidden {
   position: absolute;
   width: 1px;
@@ -157,7 +171,11 @@ img {
 .benefits-list {
   display: flex;
   gap: 24px;
-  margin: 120px 156px;
+  margin:0 156px;
+}
+
+.benefits-item {
+  width: calc((100% - 72px) / 4);
 }
 
 .benefits-subtitel {
@@ -166,6 +184,7 @@ img {
   line-height: 120%;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .benefits-text {
@@ -178,6 +197,7 @@ img {
 
 .team {
   background-color: #f4f4fd;
+  padding: 120px 0;
 }
 .titel-team {
   font-weight: 700;
@@ -187,20 +207,23 @@ img {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
-  padding-top: 120px;
- }
+  margin-bottom: 72px;
+   }
 
 .team-list {
   display: flex;
   gap: 24px;
   padding-left: 156px;
   padding-right: 156px;
-  padding-top: 72px;
-  padding-bottom: 120px;
 }
 
 .team-item {
   background-color: #ffffff;
+  width: calc((100% - 3 * 24px) / 4);
+  border-radius: 0px 0px 4px 4px; 
+}
+.team-descr{
+  padding: 32px 0;
 }
 .name {
   font-weight: 500;
@@ -210,7 +233,7 @@ img {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
-  margin-top: 32px;
+  margin-bottom: 8px;
 }
 
 .position {
@@ -220,10 +243,11 @@ img {
   text-align: center;
   color: #434455;
   background-color: #ffffff;
-  margin-top: 8px;
-  margin-bottom: 32px;
-}
+  }
 
+.portfolio{
+  padding: 120px 0;
+}
 .titel-portfolio {
   font-weight: 700;
   font-size: 36px;
@@ -232,16 +256,24 @@ img {
   text-transform: capitalize;
   text-align: center;
   color: #2e2f42;
-  padding-top: 120px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .portfolio-list{
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  column-gap: 24px;
+  row-gap: 48px;
   justify-content: center;
   padding-bottom: 120px;
+}
+.portfolio-item{
+ width: calc((100% - 48px) / 3);
+}
+.product-container{
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 .product {
   font-weight: 500;
@@ -249,6 +281,7 @@ img {
   line-height: 120%;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .product-descr {
   font-size: 16px;
@@ -272,7 +305,7 @@ img {
   padding-left: 156px;
   padding-bottom: 16px;
   margin-top: 100px;
-  display: block;
+  display:  inline-block;
 }
 
 .logo-footer-accent {
@@ -280,7 +313,7 @@ img {
 }
 .footer-end {
   background-color: #2e2f42;
-  
+  padding: 100px 0;
 }
 .footer-descr {
   font-size: 16px;
@@ -291,6 +324,5 @@ img {
   display: block;
   max-width: 264px;
   margin-left: 156px;
-  margin-bottom: 100px;
   margin-right: 1020;
 }

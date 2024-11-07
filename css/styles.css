@@ -21,14 +21,15 @@ ul {
 }
 
 .container {
-  max-width: 1440px;
-  padding-left: 0px;
-  padding-right: 0px;
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
 
 }
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 .page-header {
@@ -39,10 +40,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 0 15px;
-  width: 1158px;
-  margin: 0 auto;
-}
+ }
 
 .header-nav {
   display: flex;
@@ -111,6 +109,11 @@ img {
   color: #404bbf;
 }
 
+.main-page {
+  background-color: #2e2f42;
+  padding: 188px 0;
+}
+
 .main-titel {
   font-weight: 700;
   font-size: 56px;
@@ -119,16 +122,12 @@ img {
   letter-spacing: 0.02em;
   color: #ffffff;
   background-color: 2e2F42;
-  margin-left: 472px;
-  margin-right: 472px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 191px;
   max-width: 496px;
 }
 
-.main-page {
-  background-color: #2e2f42;
-  padding: 188px 0;
-}
 .main-button {
   background-color: #4d5ae5;
   font-weight: 500;
@@ -141,12 +140,12 @@ img {
   display: block;
   min-width: 169px;
   height: 56px;
-  margin-left: 636px;
-  margin-right: 635px;
   margin-top: 48px;
-  margin-bottom: 188px;
+  padding: 16px 32px;
   border-radius: 4px;
-}
+  margin-left: 492px;
+  }
+
 .main-button:focus,
 .main-button:hover {
   background: #404bbf;
@@ -213,14 +212,15 @@ img {
 .team-list {
   display: flex;
   gap: 24px;
-  padding-left: 156px;
-  padding-right: 156px;
+ flex-wrap: wrap;
+ padding: 0;
 }
 
 .team-item {
   background-color: #ffffff;
-  width: calc((100% - 72px) / 4);
-  border-radius: 0px 0px 4px 4px; 
+  border-radius: 0 0 4px 4px; 
+  padding: 0 0 32px 0;
+  flex-basis: calc((100% - 72px) / 4);
 }
 .team-descr{
   padding: 32px 0;
@@ -247,7 +247,8 @@ img {
 
 .portfolio{
   padding: 120px 0;
-}
+  }
+  
 .titel-portfolio {
   font-weight: 700;
   font-size: 36px;
@@ -266,11 +267,12 @@ img {
   row-gap: 48px;
   justify-content: center;
   padding-bottom: 120px;
+  margin-left: 156px;
 }
 .portfolio-item{
  width: calc((100% - 48px) / 3);
 }
-.product-container{
+.product-container {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
@@ -292,6 +294,7 @@ img {
 
 .footer-end .container{
   display: inline-block;
+  max-width: 1158px;
 }
 .logo-footer {
   font-weight: 700;
@@ -302,11 +305,10 @@ img {
   color: #4d5ae5;
   text-decoration: none;
   font-family: Raleway, sans-serif;
-  padding-left: 156px;
-  margin-bottom: 16px;
-  display:  inline-block;
+   margin-bottom: 16px;
+   margin-left: 156px;
 }
-
+  
 .logo-footer-accent {
   color: #f4f4fd;
 }
@@ -323,5 +325,4 @@ img {
   display: block;
   max-width: 264px;
   margin-left: 156px;
-  margin-right: 1020;
 }
